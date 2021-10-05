@@ -1,7 +1,4 @@
 package Programs;
-
-import com.peopletech.Student;
-
 public class DoublyLinkedList {
 	Student head;
 	 static int size = 0;

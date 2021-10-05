@@ -1,7 +1,4 @@
 package Programs;
-
-import com.peopletech.Student;
-
 public class UsingGetMethods {
 	Student head;
     //Add
@@ -142,8 +139,10 @@ public class UsingGetMethods {
         System.out.println("get last is :"); 
         list.getLast(list); 
         System.out.println("get last index is :");
-        list.LastIndexOf(list);
-        System.out.println("\nData Contains : "); 
+       System.out.println("\nData Contains : "); 
+       System.out.println(list.Contains(list, new Student(6,"ASDF","civil")));
         
         }
-}
+	
+	}
+
