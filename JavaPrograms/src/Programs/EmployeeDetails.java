@@ -1,5 +1,5 @@
-//1. Given a Code Complete the Linked List implementation by creating remove, removeFirst, removeLast, addFirst.
-//find functions[new Product().setId(123)] Node= Employee[id, name,salary] type
+/*1. Given a Code Complete the Linked List implementation by creating remove, removeFirst, removeLast, addFirst.
+find functions[new Product().setId(123)] Node= Employee[id, name,salary] type*/
 
 package Programs;
 
@@ -51,18 +51,20 @@ public class EmployeeDetails
 	//Remove Last 
 	public void removeLast( EmployeeDetails list) 
 	{
+		Employee10 prev = null;
 		if (list.head == null)
 		{
-			System.out.println("list is already empty");
+			System.out.println("list is empty");
 			} 
 		else
 		{
 			Employee10 temp = list.head;
 			while(temp.next != null)
 			{
+				prev = temp;
 				temp = temp.next;
 				}
-			temp.next = null;
+			prev.next = null;
 			}
 		}
 	public void remove(EmployeeDetails list, int id,String name,double salary)

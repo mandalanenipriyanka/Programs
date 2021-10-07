@@ -9,7 +9,9 @@ public class RemoveElement {
 		new_node.next = null;
 		if(list.head == null)
 		{
-		list.head = new_node;
+			//System.out.println("List is Empty");
+		    list.head = new_node;
+		System.out.println("List is Empty");
 		}
 		else
 		{
@@ -60,14 +62,15 @@ public class RemoveElement {
 
 		public static void main(String[] args) {
 		RemoveElement list = new RemoveElement();
-		list.insert(list, 31);
-		list.insert(list, 23);
-		list.insert(list, 73);
-		list.insert(list, 46);
-		list.insert(list, 56);
-		printList(list);
-		list.remove(list,23);
-		printList(list);
+		list.insert(list, 0);
+//		list.insert(list, 31);
+//		RemoveElement.insert(list, 23);
+//		RemoveElement.insert(list, 73);
+//		RemoveElement.insert(list, 46);
+//		RemoveElement.insert(list, 56);
+//		printList(list);
+//		list.remove(list,23);
+//		printList(list);
 		}
 		}
 		class Delete
