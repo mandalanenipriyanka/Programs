@@ -1,6 +1,7 @@
 package Programs;
 public class DoublyLinkedList {
 	Student head;
+	private Object findList;
 	 static int size = 0;
 	public static void add(DoublyLinkedList list,Student newStudent)
 	{
@@ -133,7 +134,7 @@ public class DoublyLinkedList {
         //list.remove(list, new Student(86,"pqrs","cs"));
         printList(list);
         list.addElement(list, new Student(32, "XYZ", "CSE"));
-        printList(list);}
-	
+        printList(list);
+	}
 
 }
